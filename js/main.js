@@ -87,3 +87,40 @@ var presidents = [
 ];
 
 console.log(presidents[2].firstName + ' ' + presidents[2].lastName);
+
+//functions
+function howdy() {
+  return 'Natalie Calvo says nice to meet you';
+}
+
+console.log( howdy() );
+
+var numba = function(string) {
+  if (numba.length < 7) {
+    return ("What a short little word!");
+  }
+
+  else if (numba.length > 7) {
+    return ("I'm sorry, but that's too many to count!");
+  }
+
+  else {
+    return ("7, what a perfect choice!");
+  }
+};
+
+numba('7');
+
+numba('seventy');
+
+numba('university');
+
+function inception (display, favMovie) {
+  display(favMovie)
+};
+
+inception(display, "Parent Trap");
+
+function display {
+  console.log(inception + "is a fantastic movie!")
+}
